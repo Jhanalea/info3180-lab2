@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+    <div class="profile-content">
+        <div class="profile-header">
+            <div class="img-container">
+                <img src="{{ url_for('static', filename='/images/profile-pic.png') }}" alt="Jhana's Profile">
+            </div>
+            <h1 class="name">Jhana-Lea Barnes</h1>
+            <p class="username">@jhanerr</p>
+            <p class="location">Kingston, Jamaica</p>
+            <p class="date-joined">Joined {{ date_joined }}</p>
+        </div>
+        <div class="profile-info">
+            <p class="profile-bio">
+                I'm a third year student completing my degree in Computer Science. I am interested in web development because it's an exciting field, where I can express my creativity and see my imagination come to life while solving interesting problems.
+            </p>
+            <ul class="profile-data">
+                <li>
+                    <p class="data">7</p>
+                    <p class="data-label">Posts</p>
+                </li>
+                <li>
+                    <p class="data">200</p>
+                    <p class="data-label">Following</p>
+                </li>
+                <li>
+                    <p class="data">350</p>
+                    <p class="data-label">Followers</p>
+                </li>
+            </ul>
+            <button class="follow-btn">Follow</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
